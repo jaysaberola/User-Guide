@@ -76,49 +76,27 @@ header p { font-size: .78rem; color: rgba(255,255,255,.6); margin-top: 3px; font
   border-left: 4px solid var(--orange);
   border-radius: 10px;
   margin-bottom: 14px;
-  overflow: hidden;
-  transition: box-shadow .2s;
+  padding: 20px 24px;
 }
 
-.qa-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
-
-.qa-question {
-  width: 100%; background: none; border: none; cursor: pointer;
-  text-align: left; padding: 16px 20px;
-  display: flex; align-items: flex-start; gap: 12px;
-  font-family: 'Sora', sans-serif; font-size: .9rem; font-weight: 600;
-  color: var(--text); transition: background .15s;
+.q-text {
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
-
-.qa-question:hover { background: #fdf6ee; }
-
-.q-icon {
-  flex-shrink: 0; width: 24px; height: 24px;
-  background: var(--orange); color: #fff;
-  border-radius: 6px; display: flex; align-items: center; justify-content: center;
-  font-size: .72rem; font-weight: 700;
-  font-family: 'JetBrains Mono', monospace; margin-top: 1px;
-}
-
-.q-text { flex: 1; line-height: 1.5; }
-
-.chevron {
-  flex-shrink: 0; width: 18px; height: 18px;
-  color: var(--muted); transition: transform .25s; margin-top: 3px;
-}
-
-.qa-card.open .chevron { transform: rotate(180deg); }
 
 .qa-answer {
-  display: none;
-  padding: 0 20px 18px 56px;
-  font-size: .865rem; line-height: 1.75; color: #3a3a3a;
+  font-size: .865rem;
+  line-height: 1.75;
+  color: #3a3a3a;
   border-top: 1px solid var(--border);
+  padding-top: 12px;
 }
 
-.qa-answer.visible { display: block; }
 .qa-answer p { margin-top: 10px; }
-.qa-answer p:first-child { margin-top: 12px; }
+.qa-answer p:first-child { margin-top: 0; }
 .qa-answer ol, .qa-answer ul { margin: 10px 0 0 18px; }
 .qa-answer li { margin-bottom: 6px; }
 
